@@ -15,7 +15,7 @@ const Section = () => {
                         <div>تعجب مجموعه بیان تحسین راه تحسین</div>
                     </div>
                     <div className="box">
-                        <div className='box-icon'><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <div className='box-icon'><i className="fa-solid fa-screwdriver-wrench"></i></div>
                         <div>مشاور فناوری اطلاعات</div>
                         <div>تعجب مجموعه بیان تحسین راه تحسین</div>
                     </div>
@@ -25,7 +25,7 @@ const Section = () => {
                         <div>تعجب مجموعه بیان تحسین راه تحسین</div>
                     </div>
                     <div className="box">
-                        <div className='box-icon'><i class="fa-solid fa-server"></i></div>
+                        <div className='box-icon'><i className="fa-solid fa-server"></i></div>
                         <div>امنیت سایبری</div>
                         <div>تعجب مجموعه بیان تحسین راه تحسین</div>
                     </div>

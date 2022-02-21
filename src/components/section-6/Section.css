@@ -1,0 +1,65 @@
+.sixth-wrapper {
+    height: fit-content;
+    padding-bottom: 50px;
+}
+.team {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.team-member {
+    flex-basis: 30%;
+}
+.member-image {
+    position: relative;
+}
+.member-image > img {
+    width: 100%;
+    border-radius: 20px;
+}
+.member-image > div {
+    position: absolute;
+    bottom: -10px;
+    left: 10%;
+}
+.member-image > div > span {
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 0;
+    background: #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.member-image > div > span > i {
+    transform: rotate(45deg);
+    color: #086ad8;
+}
+/* background: #fff;
+color: #086ad8; */
+.member-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.member-data > span:nth-child(1) {
+    color: #0e2b3d;
+    font-size: 18px;
+    font-weight: bold;
+}
+.member-data > span:nth-child(2) {
+    color: #086ad8;
+    font-size: 14px;
+    font-weight: bold;
+}
+@media only screen and (max-width:700px) {
+    .team-member {
+        flex-basis: 100%;
+        margin: 0 auto;
+    }
+}

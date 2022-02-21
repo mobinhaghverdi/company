@@ -1,0 +1,109 @@
+/* .fifth-wrapper {
+    height: 800px;
+} */
+.images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin-top: -100px; */
+}
+.image {
+    flex-basis: 30%;
+    overflow: hidden;
+    height: 350px;
+    position: relative;
+    z-index: 1;
+    margin-top: -120px;
+}
+.image > img {
+    width: 100%;
+    transition: .4s;
+}
+.image > img:hover {
+    transform: scale(1.2);
+}
+.image-details {
+    position: absolute;
+    z-index: 2;
+    bottom: -100%;
+    right: 10px;
+    direction: rtl;
+    color: #666666;
+    width: 80%;
+    margin: 0 auto;
+    background: #ffffff;
+    display: flex;
+    padding: 10px;
+    transition: .5s;
+}
+.top-section-fifth {
+    margin-bottom: 180px;
+    text-align: center;
+}
+.image:hover .image-details {
+    bottom: 15px;
+}
+.image-details > span:nth-child(2) {
+    background: blue;
+    color: #ffffff;
+    padding: 10px;
+    position: absolute;
+    left: -10px;
+}
+.image-details > span > span {
+    color: #086AD8 !important;
+}
+.fifth-footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.fifth-wrapper-items {
+    display: flex;
+    align-items: flex-end;
+    padding: 80px 0 80px 0;
+}
+.same-bg {
+    background: #f3f7fd;
+}
+.fifth-item {
+    display: flex;
+    align-items: center;
+}
+.fifth-detail {
+    display: flex;
+    flex-direction: column-reverse;
+    direction: rtl;
+    margin: 0 8px;
+}
+.fifth-detail > span:nth-child(1) {
+    font-size: 14px;
+    color: #666666;
+}
+.fifth-detail > span:nth-child(2) {
+    font-size: 25px;
+    color: #0e2b3d;
+    font-weight: bold;
+}
+@media only screen and (max-width:700px) {
+    .image {
+        flex-basis: 90%;
+        margin: -120px auto 0 auto;
+    }
+    .image:nth-child(1n+2) {
+        display: none;
+    }
+    .fifth-item {
+        width: 100% !important;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+    }
+    .fifth-detail {
+        text-align: center;
+    }
+    .fifth-footer {
+        gap: 25px;
+    }
+}

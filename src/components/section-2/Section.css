@@ -1,6 +1,6 @@
 .sec-section {
-    height: 800px;
     width: 100%;
+    padding-bottom: 100px;
 }
 .top-section {
     text-align: center;
@@ -21,10 +21,10 @@
 }
 .section-above-t {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 16px;
 }
 .section-above-p {
-    font-size: 18px;
+    font-size: 14px;
     color: #666666;
 }
 .spans > span{
@@ -95,7 +95,7 @@
 }
 .above-title {
     margin-top: 80px;
-    font-size: 35px;
+    font-size: 23px;
     font-weight: bold;
     color: #086AD8;
 }
@@ -104,7 +104,7 @@
     width: fit-content;
     margin: 15px auto 50px auto;
     color: #000;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
 }
 .sec-sec-title::after {

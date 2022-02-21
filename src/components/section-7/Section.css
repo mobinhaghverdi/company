@@ -1,0 +1,65 @@
+.seventh-wrapper {
+    height: fit-content;
+    background: #f3f7fd;
+    padding: 50px 0; 
+}
+.seventh-cont {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-wrapper-seventh {
+    width: 50%;
+    padding-top: 150px;
+}
+.rigth-inset {
+    direction: rtl;
+}
+.collapsible {
+    font-family: vazir;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.content {
+    font-size: 15px;
+    color: #666666;
+    direction: rtl;
+    margin: 10px 0;
+    overflow: hidden;
+}
+.caret-active {
+    transform: rotate(-90deg);
+    transition: .4s;
+}
+.caret-active-f {
+    transform: rotate(0);
+    transition: .4s;
+}
+.coll-t p {
+    height: 100% !important;
+    transition: .4s;
+}
+.coll-f p {
+    height: 0 !important;
+    transform: .4s;
+}
+@media only screen and (max-width:700px) {
+
+    .seventh-cont {
+        flex-direction: column-reverse;
+        width: 95%;
+    }
+    .left-wrapper-seventh {
+        width: 100%;
+        padding-top: 50px;
+    }
+}
