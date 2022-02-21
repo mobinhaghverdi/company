@@ -1,0 +1,142 @@
+.logo > img {
+  width: 130px;
+  height: 130px;
+}
+.nav > ul > li {
+  display: inline-block;
+  padding: 20px 18px;
+  direction: rtl;
+}
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.sec-1 {
+    display: flex;
+    gap: 5px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    margin: 0 8px;
+}
+.phone {
+    font-size: 35px;
+    color: #086AD8;
+    position: relative;
+}
+.phone::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+    margin: -5px;
+}
+.nav a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .4s all;
+}
+.nav a:hover {
+    color: blue;
+}
+.nav-li > a > span {
+    margin: 0 3.5px;
+}
+.dropdown {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 5px 10px #ddd;
+    border-radius: 5px;
+    margin-right: -35px;
+    z-index: 100;
+}
+.dropdown > li {
+    list-style-type: none;
+    border-bottom: 1px solid #dddd;
+    padding: 20px 50px;
+    cursor: pointer;
+}
+.bars {
+    display: none;
+}
+.fa-angle-down {
+    transition: .5s;
+}
+.active {
+    transition: .4s;
+    transform: rotate(180deg);
+}
+.nav-min {
+    display: flex;
+    gap: 5px;
+}
+@media only screen and (max-width:1212px) {
+    .bars {
+        display: block;
+        position: absolute;
+        right: 15px;
+        font-size: 18px;
+    }
+    .sec-1, .sec-2 {
+        transition: 1s;
+    }
+    .logo {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .nav-container {
+        width: 100%;
+        flex-direction: column-reverse;
+        position: fixed;
+        z-index: 100 !important;
+        background: #fff;
+        height: fit-content;
+    }
+    .nav-min {
+        opacity: 0;
+        pointer-events: none;
+        transition: .4s;
+        height: 0;
+    }
+    .sec-2 {
+        width: 100%;
+    }
+    .sec-1 {
+        margin-top: 10px;
+    }
+    .logo > img {
+        height: 80px;
+    }
+    .sec-3 {
+        border-bottom: 1px solid #000;
+    }
+    .nav > ul {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .nav > ul > li {
+        width: 100% ;
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+    .nav > ul > li > a {
+        display: flex;
+        justify-content: space-between;
+    }
+    .dropdown {
+        position: relative;
+        margin: 0;
+        box-shadow: none;
+        width: 100%;
+    }
+}

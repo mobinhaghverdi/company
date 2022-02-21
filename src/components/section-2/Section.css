@@ -1,0 +1,130 @@
+.sec-section {
+    height: 800px;
+    width: 100%;
+}
+.top-section {
+    text-align: center;
+}
+.section-boxes {
+    gap: 15px;
+}
+.sec-box {
+    border: 1px solid #ddd;
+    padding: 50px 30px;
+    text-align: end;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.section-icon > img {
+    width: 90px;
+}
+.section-above-t {
+    font-weight: bold;
+    font-size: 22px;
+}
+.section-above-p {
+    font-size: 18px;
+    color: #666666;
+}
+.spans > span{
+    position: absolute;
+}
+.spans > span:nth-child(1) {
+    width: 0;
+    height: 3px;
+    background: blue;
+    bottom: 0;
+    left: 50%;
+}
+.sec-box:hover .spans > span:nth-child(1){
+    animation: top .8s forwards ;
+}
+.sec-box:hover .spans > span:nth-child(2){
+    animation: right .8s forwards ;
+    animation-delay: .4s;
+}
+.sec-box:hover .spans > span:nth-child(3){
+    animation: right .8s forwards ;
+    animation-delay: .4s;
+
+}
+.sec-box:hover .spans > span:nth-child(4){
+    animation: top .8s forwards ;
+}
+.spans > span:nth-child(2) {
+    width: 3px;
+    height: 0;
+    background: blue;
+    bottom: 0;
+    left: 0;
+}
+.spans > span:nth-child(3) {
+    width: 3px;
+    height: 0;
+    background: blue;
+    top: 0;
+    right: 0;
+}
+.spans > span:nth-child(4) {
+    width: 0;
+    height: 3px;
+    background: blue;
+    top: 0;
+    left: 50%;
+}
+@keyframes top {
+    0% {
+        left: 50%;
+        width: 0%;
+    }
+    100% {
+        left: 0%;
+        width: 100%;
+    }
+}
+@keyframes right {
+    0% {
+        top: 50%;
+        height: 0%;
+    }
+    100% {
+        top: 0%;
+        height: 100%;
+    }
+}
+.above-title {
+    margin-top: 80px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #086AD8;
+}
+.sec-sec-title {
+    position: relative;
+    width: fit-content;
+    margin: 15px auto 50px auto;
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+}
+.sec-sec-title::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #000;
+    bottom: -10px;
+    left: 20%;
+    border-radius: 10px;
+}
+@media only screen and (max-width:700px) {
+    .sec-box {
+        text-align: center;
+    }
+    .section-above-t {
+        font-size: 18px;
+    }
+    .section-above-p {
+        font-size: 14px;
+    }
+}

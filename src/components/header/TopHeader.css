@@ -1,0 +1,40 @@
+.top-header {
+  width: 100%;
+  background: #086ad8;
+  color: #ffffff;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.left-side > div,
+.right-side > div {
+  display: inline;
+  font-size: 0.9rem;
+  margin: 0 8px;
+}
+.icons > i {
+  margin: 0 8px;
+  font-size: 1rem;
+}
+span > i {
+  margin: 0 5px;
+}
+.email {
+    position: relative;
+}
+.email::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #ffffff;
+}
+@media only screen and (max-width:1212px) {
+  .top-header {
+    display: none;
+  }
+}
