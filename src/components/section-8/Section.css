@@ -1,0 +1,76 @@
+.eight-wrapper {
+    width: 100%;
+    /* height: 800px; */
+    padding-bottom: 50px;
+}
+.weblogs {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.weblog {
+    flex-basis: 31%;
+    direction: rtl;
+    box-shadow: 0 0 10px #ddd;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.weblog-detail {
+    padding: 10px 20px;
+}
+.weblog-image > img {
+    width: 100%;
+}
+.weblog-data {
+    display: flex;
+    font-size: 12px;
+    padding: 10px 0;
+    /* padding: 10px; */
+}
+.weblog-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #173a50;
+}
+.weblog-description {
+    font-size: 13px;
+    color: #666666;
+}
+.weblog-data > span {
+    display: flex;
+}
+.weblog-data > span > i {
+    color: #086AD8;
+}
+.weblog-data > span > div {
+    color: #666666;
+}
+.weblog-more {
+    font-size: 11px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    color: #666666;
+    margin: 10px 0;
+    font-weight: bold;
+    transition: .4s;
+}
+.weblog-more:hover  {
+    color: #086AD8;
+    cursor: pointer;
+}
+@media only screen and (max-width:700px) {
+    .weblog {
+        flex-basis: 80%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width:480px) {
+    .weblog {
+        flex-basis: 95%;
+        margin: 0 auto;
+    }
+}

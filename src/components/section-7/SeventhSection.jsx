@@ -13,12 +13,12 @@ const SeventhSection = () => {
             <div className="seventh-cont">
                 <div className="left-wrapper-seventh">
                     {collaps.map(item => (
-                        <CollapsItem title={item.title} description={item.description} />
+                        <CollapsItem key={item.id} title={item.title} description={item.description} />
                     ))}
                 </div>
                 <div className="rigth-inset">
                     <div className="title-sec">سوالات متداول</div>
-                    <div className="hyper-text">
+                    <div className="hyper-text-s">
                         رایج ترین پاسخ و سوال
                     </div>
                     <div className="third-btn">

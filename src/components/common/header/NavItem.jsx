@@ -6,7 +6,7 @@ const NavItem = ({ id, name, angle, url }) => {
 
     const [list, setList] = useState(false)
 
-    let { dropdown } = require("../../data/data.json");
+    let { dropdown } = require("../../../data/data.json");
 
     let dropFiles = dropdown.filter((item) => item.itemfor === id);
 

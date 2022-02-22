@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Section.css";
 import SectionBox from './SectionBox';
+import Fade from "react-reveal";
 
 
 const SecSection = () => {
@@ -16,7 +17,9 @@ const SecSection = () => {
             </div>
             <div className="container section-boxes">
                 {boxes.map(item => (
-                    <SectionBox key={item.id} title={item.name} paragraph={item.paragraph} icon={item.icon} />
+                    <Fade>
+                        <SectionBox key={item.id} title={item.name} paragraph={item.paragraph} icon={item.icon} />
+                    </Fade>
                 ))}
             </div>
         </div>
